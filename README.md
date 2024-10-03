@@ -20,8 +20,11 @@ Optional: tmux for multitasking
 
 ### Step-by-Step Procedure:  
 1. Generate SSH Keys  
-First, open your terminal and run the following command to generate an SSH key pair. Replace your_email@example.com with your actual email address.  
-_**ssh-keygen -t rsa -b 4096 -C "your_email@example.com"**_  
+First, open your terminal and run the following command to generate an SSH key pair. Replace your_email@example.com with your actual email address you used to make a Github account:     
+_**ssh-keygen -t rsa -b 4096 -C "your_email@example.com"**_    
+Press _**Enter**_ 2 times
+  
+*Resource: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
 
 **Explanation of Flags:**  
 
