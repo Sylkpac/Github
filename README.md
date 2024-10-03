@@ -45,42 +45,43 @@ Edit this file (_**nano ~/.ssh/config**_) and add the following lines to configu
 _**Host github.com-(your github name)    
 &nbsp; HostName github.com  
 &nbsp; User git  
-&nbsp; IdentityFile ~/.ssh/id_rsa**_  
+&nbsp; IdentityFile ~/.ssh/id_rsa**_      
     
-Make sure the file is saved with the correct idents/spacing.  
+Make sure the file is saved with the correct idents/spacing.      
 
-5. Start the SSH Agent
-The SSH agent is a background program that handles your SSH keys for automatic authentication. Start it with the following command:
-_**eval "$(ssh-agent -s)"**_
-You should see the agent process ID (PID), confirming it’s running.
+5. Start the SSH Agent    
+The SSH agent is a background program that handles your SSH keys for automatic authentication. Start it with the following command:    
+_**eval "$(ssh-agent -s)"**_    
+You should see the agent process ID (PID), confirming it’s running.    
 
-5. Add Your Private Key to the SSH Agent
-For easier authentication, you can add your private key to the SSH agent:
-_**ssh-add ~/.ssh/id_rsa**_
-If successful, you'll see a confirmation message: "Identity added."
+5. Add Your Private Key to the SSH Agent    
+For easier authentication, you can add your private key to the SSH agent:    
+_**ssh-add ~/.ssh/id_rsa**_    
+If successful, you'll see a confirmation message: "Identity added."    
 
-6. Add Your Public Key to GitHub
-Now, let's connect your SSH key to GitHub:
+6. Add Your Public Key to GitHub    
+Now, let's connect your SSH key to GitHub:    
 
-Go to your GitHub account settings.
-Navigate to SSH and GPG keys.
-Click New SSH key.
-Paste the public key you copied earlier into the "Key" field.
-Give the key a recognizable title (e.g., "My Workstation").
-Click Add SSH key.
-7. Test Your Connection
-Finally, let’s test the connection between your machine and GitHub. Run the following command:
-_**ssh -T git@github.com**_
-If successful, you'll get a confirmation message like:
-_**Hi [your_username]! You've successfully authenticated, but GitHub does not provide shell access.**_
+Go to your GitHub account settings.    
+Navigate to SSH and GPG keys.    
+Click New SSH key.    
+Paste the public key you copied earlier into the "Key" field.    
+Give the key a recognizable title (e.g., "My Workstation").    
+Click Add SSH key.    
 
-Bonus: Copying Public Key to Clipboard (Optional)
-To make copying your public key easier, you can send it directly to the clipboard. First, ensure xsel is installed:
-_**sudo apt-get install xsel**_
-Then, copy the public key with:
-_**xsel --clipboard < ~/.ssh/id_rsa.pub**_
-⚠️ Be careful: Ensure you're copying the .pub file (public key), not your private key!
+7. Test Your Connection        
+Finally, let’s test the connection between your machine and GitHub. Run the following command:    
+_**ssh -T git@github.com**_    
+If successful, you'll get a confirmation message like:    
+_**Hi [your_username]! You've successfully authenticated, but GitHub does not provide shell access.**_    
 
-Conclusion:
-Congratulations! You’ve successfully set up SSH keys for secure access to GitHub. Make sure to document your process in your GitHub repository, and feel free to experiment with other configurations and multiple SSH keys for different projects.
+Bonus: Copying Public Key to Clipboard (Optional)    
+To make copying your public key easier, you can send it directly to the clipboard. First, ensure xsel is installed:    
+_**sudo apt-get install xsel**_    
+Then, copy the public key with:    
+_**xsel --clipboard < ~/.ssh/id_rsa.pub**_    
+⚠️ Be careful: Ensure you're copying the .pub file (public key), not your private key!    
+
+Conclusion:    
+Congratulations! You’ve successfully set up SSH keys for secure access to GitHub. Make sure to document your process in your GitHub repository, and feel free to experiment with other configurations and multiple SSH keys for different projects.    
 
