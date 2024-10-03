@@ -47,22 +47,16 @@ _**Host github.com-(your github name)
 &nbsp; User git  
 &nbsp; IdentityFile ~/.ssh/id_rsa**_  
     
-Make sure the file is saved with the correct spacing.  
+Make sure the file is saved with the correct idents/spacing.  
 
 5. Start the SSH Agent
 The SSH agent is a background program that handles your SSH keys for automatic authentication. Start it with the following command:
-
-bash
-Copy code
-eval "$(ssh-agent -s)"
+_**eval "$(ssh-agent -s)"**_
 You should see the agent process ID (PID), confirming it’s running.
 
 5. Add Your Private Key to the SSH Agent
 For easier authentication, you can add your private key to the SSH agent:
-
-bash
-Copy code
-ssh-add ~/.ssh/id_rsa
+_**ssh-add ~/.ssh/id_rsa**_
 If successful, you'll see a confirmation message: "Identity added."
 
 6. Add Your Public Key to GitHub
@@ -76,26 +70,15 @@ Give the key a recognizable title (e.g., "My Workstation").
 Click Add SSH key.
 7. Test Your Connection
 Finally, let’s test the connection between your machine and GitHub. Run the following command:
-
-bash
-Copy code
-ssh -T git@github.com
+_**ssh -T git@github.com**_
 If successful, you'll get a confirmation message like:
+_**Hi [your_username]! You've successfully authenticated, but GitHub does not provide shell access.**_
 
-vbnet
-Copy code
-Hi [your_username]! You've successfully authenticated, but GitHub does not provide shell access.
 Bonus: Copying Public Key to Clipboard (Optional)
 To make copying your public key easier, you can send it directly to the clipboard. First, ensure xsel is installed:
-
-bash
-Copy code
-sudo apt-get install xsel
+_**sudo apt-get install xsel**_
 Then, copy the public key with:
-
-bash
-Copy code
-xsel --clipboard < ~/.ssh/id_rsa.pub
+_**xsel --clipboard < ~/.ssh/id_rsa.pub**_
 ⚠️ Be careful: Ensure you're copying the .pub file (public key), not your private key!
 
 Conclusion:
