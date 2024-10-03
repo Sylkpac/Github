@@ -42,10 +42,10 @@ If you don’t already have a configuration file, create one:
 _**touch ~/.ssh/config**_  
 Edit this file (_**nano ~/.ssh/config**_) and add the following lines to configure GitHub access:  
 
-_**Host github.com-(your github name)
-HostName github.com  
-User git  
-IdentityFile ~/.ssh/id_rsa**_  
+_**Host github.com-(your github name)    
+&nbsp; HostName github.com  
+&nbsp; User git  
+&nbsp; IdentityFile ~/.ssh/id_rsa**_  
     
 Make sure the file is saved with the correct spacing.  
 
