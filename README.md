@@ -279,11 +279,13 @@ Stage Changes: Stage all files with:
 
 _**git add .**_     
 
+*It prepares these files to be included in the next version of your project.     
+
 Commit the Changes:     
 
 _**git commit -m "Updated README for Git workflow tutorial"**_     
 
-This creates a new commit that saves the staged changes in your local repository with a descriptive message.
+*This command creates a new commit in your local repository, capturing the staged changes. The -m "<message>" argument is required to provide a descriptive commit message for tracking project history.     
 
 ### 3. Create and Switch to a New Branch
 Create a Branch: Create a new branch for your changes. Let’s name it feature/git-tutorial:
@@ -300,7 +302,7 @@ _**git branch**_
 
 The new branch (feature/git-tutorial) will be highlighted, indicating you’re actively working in this branch.
 
-## 4. Make Further Edits in the New Branch
+### 4. Make Further Edits in the New Branch
 Edit the README.md File Again:
 
 _**nano README.md**_     
@@ -318,7 +320,21 @@ Push the New Branch: Push the changes from feature/git-tutorial to GitHub:
 
 _**git push --set-upstream origin feature/git-tutorial**_     
 
-After running this command, your branch should now appear on GitHub under the repository.
+After running git push --set-upstream origin tutorial/git, your local changes will be visible as a new branch named tutorial/git on the GitHub repository. This command also sets up a tracking relationship between your local and remote branches, simplifying future pushes.
+
+Step-by-Step Breakdown of the result of the command:     
+
+**Counting and Compression:** Git first counts the files and metadata (objects) to be pushed. Then, it uses efficient compression to minimize data transfer by only sending changes between your local commits and the remote branch.     
+
+**Uploading Changes:** Compressed objects containing your changes are uploaded to the remote repository (e.g., GitHub). The output shows details like the total number of objects pushed and confirms that none were reused.     
+
+**Remote Message and Branch Setup:**     
+A message from the remote repository (likely GitHub) might suggest creating a pull request to integrate your changes.
+The destination repository confirmation (e.g., "github.com:_accountname_/cloud-bootcamp.git") is displayed.
+The output indicates a successful push:
+[new branch] signifies a new branch named "tutorial/git" created on the remote repository.
+tutorial/git -> tutorial/git shows your local branch now tracks the remote branch.
+Finally, confirmation is provided that the --set-upstream flag established a tracking relationship between your local and remote branches.
 
 ### 6. Open a Pull Request on GitHub
 Navigate to the Repository on GitHub: Go to your 'cloud-bootcamp' repository on GitHub, where you should see an option to compare and create a pull request for the new branch.
