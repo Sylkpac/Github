@@ -278,6 +278,7 @@ The README file will appear as modified (in red), indicating unstaged changes.
 Stage Changes: Stage all files with:     
 
 _**git add .**_     
+
 Commit the Changes:     
 
 _**git commit -m "Updated README for Git workflow tutorial"**_     
@@ -287,19 +288,23 @@ This creates a new commit that saves the staged changes in your local repository
 ### 3. Create and Switch to a New Branch
 Create a Branch: Create a new branch for your changes. Let’s name it feature/git-tutorial:
 
-_**git branch feature/git-tutorial**_
+_**git branch feature/git-tutorial**_     
+
 Switch to the New Branch:
 
-_**git checkout feature/git-tutorial**_
+_**git checkout feature/git-tutorial**_     
+
 Confirm Branch Change:
 
-git branch
+_**git branch**_     
+
 The new branch (feature/git-tutorial) will be highlighted, indicating you’re actively working in this branch.
 
 ## 4. Make Further Edits in the New Branch
 Edit the README.md File Again:
 
-_**nano README.md**_
+_**nano README.md**_     
+
 Add a line like "This change was made in the feature/git-tutorial branch."
 
 Stage and Commit the New Changes:
