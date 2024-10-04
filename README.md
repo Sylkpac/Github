@@ -37,8 +37,6 @@ You'll be prompted to choose a file name to save the key (press Enter to accept 
 
 2. View the Public Key  
 Next, open the file that contains your public key:  
-
-Linux/macOS:
   
 _**~/.ssh/id_rsa.pub**_   
 
@@ -70,11 +68,13 @@ _**eval "$(ssh-agent -s)"**_
 You should see the agent process ID (PID), confirming it’s running.    
 
 5. Add Your Private Key to the SSH Agent    
-For easier authentication, you can add your private key to the SSH agent:    
-_**ssh-add ~/.ssh/id_rsa**_    
+For easier authentication, you can add your private key to the SSH agent:
+    
+_**ssh-add ~/.ssh/id_rsa**_     
+
 If successful, you'll see a confirmation message: "Identity added."    
 
-6. Add Your Public Key to GitHub    
+7. Add Your Public Key to GitHub    
 Now, let's connect your SSH key to GitHub:    
 
 Go to your GitHub account settings.    
@@ -85,18 +85,24 @@ Give the key a recognizable title (e.g., "My Workstation").
 Click Add SSH key.    
 
 7. Test Your Connection        
-Finally, let’s test the connection between your machine and GitHub. Run the following command:    
-_**ssh -T git@github.com**_    
+Finally, let’s test the connection between your machine and GitHub. Run the following command:
+    
+_**ssh -T git@github.com**_      
+
 If successful, you'll get a confirmation message like:    
-_**Hi [your_username]! You've successfully authenticated, but GitHub does not provide shell access.**_    
+_Hi [your_username]! You've successfully authenticated, but GitHub does not provide shell access._    
 
 Bonus: Copying Public Key to Clipboard (Optional)    
-To make copying your public key easier, you can send it directly to the clipboard. First, ensure xsel is installed:    
-_**sudo apt-get install xsel**_    
-Then, copy the public key with:    
-_**xsel --clipboard < ~/.ssh/id_rsa.pub**_    
+To make copying your public key easier, you can send it directly to the clipboard. First, ensure xsel is installed:     
+
+_**sudo apt-get install xsel**_      
+
+Then, copy the public key with:      
+
+_**xsel --clipboard < ~/.ssh/id_rsa.pub**_      
+
 ⚠️ Be careful: Ensure you're copying the .pub file (public key), not your private key!    
 
-Conclusion:    
+**Conclusion:**    
 Congratulations! You’ve successfully set up SSH keys for secure access to GitHub. Make sure to document your process in your GitHub repository, and feel free to experiment with other configurations and multiple SSH keys for different projects.    
 
