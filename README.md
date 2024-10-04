@@ -183,6 +183,8 @@ Commit Changes: Commit the staged changes with a message:
 
 _**git commit -m "Initial commit"**_
 
+*The -m switch is for message 
+
 ### 6. Link to the GitHub Repository (Remote)
 Add the Remote Repository: Connect your local repository to the GitHub remote repository URL you copied:
 
@@ -194,6 +196,8 @@ Replace <GitHub_SSH_URL> with the SSH URL of your GitHub repository.
 Push your local commits to the remote repository:
 
 _**git push -u origin main**_
+
+*the -u switch is to set the upstream branch. The upstream branch is a remote branch that your local branch is tracking.
 
 After running this command, you should see your files on the GitHub repository page.
 
@@ -208,12 +212,14 @@ Check the Git Status:
 
 _**git status**_
 
-*the text result should be 'red' indicating a change to the file is _not_ commited. 
+*_Red:_ A file listed in red indicates that it is untracked. This means the file is new and hasn't been added to the Git repository yet.     
+_Green:_ A file listed in green indicates that it is staged. This means the file is ready to be committed to the repository.
 
 Stage and Commit Changes:
 
-_**git add README.md
-git commit -m "Updated README with additional info"**_
+_**git add README.md**_          
+
+_**git commit -m "Updated README with additional info"**_
 
 Push Changes to GitHub:
 
