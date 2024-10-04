@@ -110,7 +110,14 @@ Congratulations! You’ve successfully set up SSH keys for secure access to GitH
 
 # Version Controlling using Git<a name="version-controlling"></a> 
 
-## Objective     
+## Benefits for Cloud Security Engineers
+
+- **Version Control:** Git allows auditable and controlled management of infrastructure code and configuration files (e.g., Terraform, CloudFormation).
+- **Collaboration:** GitHub supports collaboration across teams and locations, helping everyone work on the same configurations and codebase without conflicts.
+- **Auditing & Accountability:** Git provides a history of changes, making it easy to review who made what changes for security and compliance.
+- **Backup & Recovery:** Storing code and configurations on GitHub safeguards against local data loss, ensuring you can always access your files.
+
+## Lab Objective     
 This lab will walk you through the process of creating a local Git repository for a directory on your computer, configuring it, and pushing it to GitHub for version control. For Cloud Security Engineers, managing code and configuration files securely with Git is essential, making this process foundational for any IaC (Infrastructure as Code) workflows.  
 
 ## What is Git?
@@ -227,11 +234,5 @@ _**git push**_
 
 Refresh your GitHub repository page to see the updated README.
 
-## Benefits for Cloud Security Engineers
 
-Version Control: Git allows auditable and controlled management of infrastructure code and configuration files (e.g., Terraform, CloudFormation).
-Collaboration: GitHub supports collaboration across teams and locations, helping everyone work on the same configurations and codebase without conflicts.
-Auditing & Accountability: Git provides a history of changes, making it easy to review who made what changes for security and compliance.
-Backup & Recovery: Storing code and configurations on GitHub safeguards against local data loss, ensuring you can always access your files.
-By following these steps, you've learned the essential workflow for version controlling files on GitHub, a critical skill in cloud security.
 
