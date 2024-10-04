@@ -279,13 +279,13 @@ Stage Changes: Stage all files with:
 
 _**git add .**_     
 
-*It prepares these files to be included in the next version of your project.     
+*It prepares _all_ changed files to be included in the next version of your project.     
 
 Commit the Changes:     
 
 _**git commit -m "Updated README for Git workflow tutorial"**_     
 
-*This command creates a new commit in your local repository, capturing the staged changes. The -m "<message>" argument is required to provide a descriptive commit message for tracking project history.     
+*This command creates a new commit in your local repository, capturing the staged changes. The -m "message" argument is required to provide a descriptive commit message for tracking project history.     
 
 ### 3. Create and Switch to a New Branch
 Create a Branch: Create a new branch for your changes. Let’s name it feature/git-tutorial:
@@ -320,9 +320,9 @@ Push the New Branch: Push the changes from feature/git-tutorial to GitHub:
 
 _**git push --set-upstream origin feature/git-tutorial**_     
 
-After running git push --set-upstream origin tutorial/git, your local changes will be visible as a new branch named tutorial/git on the GitHub repository. This command also sets up a tracking relationship between your local and remote branches, simplifying future pushes.
+After running _git push --set-upstream origin tutorial/git_, your local changes will be visible as a new branch named tutorial/git on the GitHub repository. This command also sets up a tracking relationship between your local and remote branches, simplifying future pushes.
 
-Step-by-Step Breakdown of the result of the command:     
+Step-by-Step Breakdown of the output of this command:     
 
 **Counting and Compression:** Git first counts the files and metadata (objects) to be pushed. Then, it uses efficient compression to minimize data transfer by only sending changes between your local commits and the remote branch.     
 
