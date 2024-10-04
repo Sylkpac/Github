@@ -239,7 +239,7 @@ Refresh your GitHub repository page to see the updated README.
 
 # Collaborating with Git – Using Branches and Pull Requests<a name="collaborating"></a> 
 
-## Objective:
+## Objective
 This lab teaches you how to create branches, make commits, push changes to GitHub, and open a pull request for review. Understanding this workflow is essential for Cloud Security Engineers, who often collaborate on shared configurations, policies, and code.
 
 ## Why Should a Security Engineer Know This?
@@ -249,15 +249,15 @@ Security Engineers frequently collaborate on code and configuration files in ver
 **Auditing is Enhanced:** Every change has a clear history, making it easier to track who modified what and why.
 **Team Collaboration is Streamlined:** Pull requests promote transparent communication and feedback loops, critical for a security-focused team working on sensitive configurations or code.
 
-## Scenario:
+## Scenario
 Suppose you’re continuing work on your cloud-bootcamp GitHub repository. You’ll make changes in a new branch, push those changes to GitHub, and create a pull request to merge your updates.
 
-## Prerequisites:
-Basic familiarity with the command line
-An existing Git repository on your local machine (e.g., cloud-bootcamp)
+## Prerequisites
+Basic familiarity with the command line     
+An existing Git repository on your local machine (e.g., cloud-bootcamp). *Follow along with the previouos labs above. 
 
-## Steps:
-1. Make Changes to a Tracked Directory
+## Steps
+### 1. Make Changes to a Tracked Directory
 Navigate to the Project Directory:     
 
 _**cd ~/Documents/cloud-bootcamp**_     
@@ -274,7 +274,7 @@ _**git status**_
 
 The README file will appear as modified (in red), indicating unstaged changes.     
 
-## 2. Stage and Commit Changes     
+### 2. Stage and Commit Changes     
 Stage Changes: Stage all files with:     
 
 _**git add .**_     
@@ -284,7 +284,7 @@ _**git commit -m "Updated README for Git workflow tutorial"**_
 
 This creates a new commit that saves the staged changes in your local repository with a descriptive message.
 
-## 3. Create and Switch to a New Branch
+### 3. Create and Switch to a New Branch
 Create a Branch: Create a new branch for your changes. Let’s name it feature/git-tutorial:
 
 _**git branch feature/git-tutorial**_
@@ -308,14 +308,14 @@ _**git add README.md**_
 
 _**git commit -m "Additional update from feature/git-tutorial branch"**_     
 
-## 5. Push Changes to GitHub
+### 5. Push Changes to GitHub
 Push the New Branch: Push the changes from feature/git-tutorial to GitHub:
 
 _**git push --set-upstream origin feature/git-tutorial**_     
 
 After running this command, your branch should now appear on GitHub under the repository.
 
-## 6. Open a Pull Request on GitHub
+### 6. Open a Pull Request on GitHub
 Navigate to the Repository on GitHub: Go to your 'cloud-bootcamp' repository on GitHub, where you should see an option to compare and create a pull request for the new branch.
 
 Open the Pull Request:
@@ -325,11 +325,11 @@ Open the Pull Request:
 - Click "Create pull request" and add a title and description.
 - Submit the Pull Request: After review, the pull request can be merged.
 
-## 7. Merge the Pull Request
+### 7. Merge the Pull Request
 - Merge and Confirm: Select "Merge pull request" and then "Confirm merge".
 - Verify the Merge: The updates should now be in the main branch on GitHub.
 
-## 8. Pull Changes to Your Local Main Branch
+### 8. Pull Changes to Your Local Main Branch
 Switch Back to Main Branch Locally:
 
 _**git checkout main**_     
