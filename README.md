@@ -135,7 +135,7 @@ Select SSH under the setup options, and copy the SSH URL provided on the "…or 
 
 ### 2. Set Up the Local Repository
 
-Navigate to Documents: Change to the Documents directory:
+Navigate to Documents:
 
 _**cd ~/Documents**_
 
@@ -147,15 +147,16 @@ Move into the Directory:
 
 _**cd cloud-bootcamp**_
 
-Verify Location (Optional): Check your current directory with:
+Verify Location:
 
 _**pwd**_
 
 ### 3. Configure Git Identity     
 If you haven’t already, set your Git identity to match your GitHub account:
 
-_**git config --global user.email "you@example.com"     
-git config --global user.name "Your Name"**_
+_**git config --global user.email "you@example.com"**_      
+
+_**git config --global user.name "Your Name"**_
 
 This allows Git to associate your commits with your GitHub account.
 
@@ -170,15 +171,15 @@ _**cat README.md**_
 
 ### 5. Initialize Git and Stage Changes
 
-**Initialize Git:** Set up Git in this directory to enable version control.
+Initialize Git: Set up Git in this directory to enable version control.
 
 _**git init**_
 
-**Stage Changes:** Use git add to stage the README file:
+Stage Changes: Use git add to stage the README file:
 
 _**git add README.md**_
 
-**Commit Changes:** Commit the staged changes with a message:
+Commit Changes: Commit the staged changes with a message:
 
 _**git commit -m "Initial commit"**_
 
@@ -203,18 +204,18 @@ _**nano README.md**_
 
 Add a line in the file "Updated file with additional info." just so there is a change in the file. 
 
-**Check the Git Status:**
+Check the Git Status:
 
 _**git status**_
 
 *the text result should be 'red' indicating a change to the file is _not_ commited. 
 
-**Stage and Commit Changes:**
+Stage and Commit Changes:
 
 _**git add README.md
 git commit -m "Updated README with additional info"**_
 
-**Push Changes to GitHub:**
+Push Changes to GitHub:
 
 _**git push**_
 
