@@ -106,26 +106,33 @@ _**xsel --clipboard < ~/.ssh/id_rsa.pub**_
 **Conclusion:**    
 Congratulations! You’ve successfully set up SSH keys for secure access to GitHub. Make sure to document your process in your GitHub repository, and feel free to experiment with other configurations and multiple SSH keys for different projects.  
 
-
+------------------------------------------------------
 
 # GitHub Lab: Version Controlling a Local Directory on GitHub
 
 ## Objective:     
-This lab will walk you through the process of creating a local Git repository for a directory on your computer, configuring it, and pushing it to GitHub for version control. For Cloud Security Engineers, managing code and configuration files securely with Git is essential, making this process foundational for any IaC (Infrastructure as Code) workflows.     
+This lab will walk you through the process of creating a local Git repository for a directory on your computer, configuring it, and pushing it to GitHub for version control. For Cloud Security Engineers, managing code and configuration files securely with Git is essential, making this process foundational for any IaC (Infrastructure as Code) workflows.  
+
+## What is Git?: 
+Git is a distributed version control system (DVCS) that tracks changes made to files over time. It's primarily used by software developers to manage source code, but it can be applied to any set of files.
 
 ## Scenario:     
-Imagine you’ve set up a directory called cloud-bootcamp in your Documents folder to store resources for a cloud security bootcamp. You want to version-control this directory using Git and push it to a GitHub repository for backup and collaboration.
+Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents folder to store resources for a cloud security bootcamp. You want to version-control this directory using Git and push it to a GitHub repository for backup and collaboration.
 
 ## Prerequisites:     
-A GitHub account
-Basic familiarity with the command line
-SSH keys set up with GitHub for secure access (see the Setting Up SSH Keys for GitHub Access Lab)
-Tools:
+- A GitHub account
+- Basic familiarity with the command line
+- SSH keys set up with GitHub for secure access (see the Setting Up SSH Keys for GitHub Access Lab)
+
+## Tools:
 Terminal or Command Prompt (e.g., WSL - Ubuntu)
-Steps:
-1. Create a Repository on GitHub
+
+## Steps:
+
+### 1. Create a Repository on GitHub
 Go to GitHub and create a new repository named cloud-bootcamp. Set it to public.
 Select SSH under the setup options, and copy the SSH URL provided on the "…or push an existing repository from the command line" section.
+
 2. Set Up the Local Repository
 Navigate to Documents: Change to the Documents directory:
 
