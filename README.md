@@ -2,6 +2,7 @@
 
 1.  [Setting Up SSH Keys for GitHub Access](#setting-up-ssh)
 2.  [Version Controlling using Git](#version-controlling)
+3.  [Collaborating with Git – Using Branches and Pull Requests](#collaborating)
 
 ------------------------------------------------------
 
@@ -234,5 +235,110 @@ _**git push**_
 
 Refresh your GitHub repository page to see the updated README.
 
+------------------------------------------------------
 
+# Collaborating with Git – Using Branches and Pull Requests<a name="collaborating"></a> 
 
+## Objective:
+This lab teaches you how to create branches, make commits, push changes to GitHub, and open a pull request for review. Understanding this workflow is essential for Cloud Security Engineers, who often collaborate on shared configurations, policies, and code.
+
+## Why Should a Security Engineer Know This?
+Security Engineers frequently collaborate on code and configuration files in version-controlled repositories. Knowing how to create branches, make commits, and manage pull requests ensures that:
+
+**Changes are Controlled:** Working in separate branches reduces risk by isolating updates until they are ready for review and deployment.
+**Auditing is Enhanced:** Every change has a clear history, making it easier to track who modified what and why.
+**Team Collaboration is Streamlined:** Pull requests promote transparent communication and feedback loops, critical for a security-focused team working on sensitive configurations or code.
+
+## Scenario:
+Suppose you’re continuing work on your cloud-bootcamp GitHub repository. You’ll make changes in a new branch, push those changes to GitHub, and create a pull request to merge your updates.
+
+## Prerequisites:
+Basic familiarity with the command line
+An existing Git repository on your local machine (e.g., cloud-bootcamp)
+
+## Steps:
+1. Make Changes to a Tracked Directory
+Navigate to the Project Directory:     
+
+_**cd ~/Documents/cloud-bootcamp**_     
+
+Edit the README.md File:     
+
+_**nano README.md**_     
+
+Add a comment such as "Updated content for Git workflow tutorial." Then save and exit.
+
+Check Status:
+
+_**git status**_     
+
+The README file will appear as modified (in red), indicating unstaged changes.     
+
+## 2. Stage and Commit Changes     
+Stage Changes: Stage all files with:     
+
+_**git add .**_     
+Commit the Changes:     
+
+_**git commit -m "Updated README for Git workflow tutorial"**_     
+
+This creates a new commit that saves the staged changes in your local repository with a descriptive message.
+
+## 3. Create and Switch to a New Branch
+Create a Branch: Create a new branch for your changes. Let’s name it feature/git-tutorial:
+
+_**git branch feature/git-tutorial**_
+Switch to the New Branch:
+
+_**git checkout feature/git-tutorial**_
+Confirm Branch Change:
+
+git branch
+The new branch (feature/git-tutorial) will be highlighted, indicating you’re actively working in this branch.
+
+## 4. Make Further Edits in the New Branch
+Edit the README.md File Again:
+
+_**nano README.md**_
+Add a line like "This change was made in the feature/git-tutorial branch."
+
+Stage and Commit the New Changes:
+
+_**git add README.md**_     
+
+_**git commit -m "Additional update from feature/git-tutorial branch"**_     
+
+## 5. Push Changes to GitHub
+Push the New Branch: Push the changes from feature/git-tutorial to GitHub:
+
+_**git push --set-upstream origin feature/git-tutorial**_     
+
+After running this command, your branch should now appear on GitHub under the repository.
+
+## 6. Open a Pull Request on GitHub
+Navigate to the Repository on GitHub: Go to your 'cloud-bootcamp' repository on GitHub, where you should see an option to compare and create a pull request for the new branch.
+
+Open the Pull Request:
+
+- Click "Compare & pull request".
+- Review the changes in the pull request view to confirm the modifications.
+- Click "Create pull request" and add a title and description.
+- Submit the Pull Request: After review, the pull request can be merged.
+
+## 7. Merge the Pull Request
+- Merge and Confirm: Select "Merge pull request" and then "Confirm merge".
+- Verify the Merge: The updates should now be in the main branch on GitHub.
+
+## 8. Pull Changes to Your Local Main Branch
+Switch Back to Main Branch Locally:
+
+_**git checkout main**_     
+
+Pull Updates: Synchronize the main branch with GitHub:
+
+_**git pull**_
+Verify the Changes Locally:
+
+_**nano README.md**_     
+
+Confirm that the latest updates from feature/git-tutorial are now in your local main branch.
