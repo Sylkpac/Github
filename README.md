@@ -110,113 +110,117 @@ Congratulations! You’ve successfully set up SSH keys for secure access to GitH
 
 # GitHub Lab: Version Controlling a Local Directory on GitHub
 
-## Objective:     
+## Objective     
 This lab will walk you through the process of creating a local Git repository for a directory on your computer, configuring it, and pushing it to GitHub for version control. For Cloud Security Engineers, managing code and configuration files securely with Git is essential, making this process foundational for any IaC (Infrastructure as Code) workflows.  
 
-## What is Git?: 
+## What is Git?
 Git is a distributed version control system (DVCS) that tracks changes made to files over time. It's primarily used by software developers to manage source code, but it can be applied to any set of files.
 
-## Scenario:     
+## Scenario
 Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents folder to store resources for a cloud security bootcamp. You want to version-control this directory using Git and push it to a GitHub repository for backup and collaboration.
 
-## Prerequisites:     
+## Prerequisites   
 - A GitHub account
 - Basic familiarity with the command line
 - SSH keys set up with GitHub for secure access (see the Setting Up SSH Keys for GitHub Access Lab)
 
-## Tools:
+## Tools
 Terminal or Command Prompt (e.g., WSL - Ubuntu)
 
-## Steps:
+## Steps
 
 ### 1. Create a Repository on GitHub
-Go to GitHub and create a new repository named cloud-bootcamp. Set it to public.
+Go to GitHub and create a new repository named 'cloud-bootcamp'. Set it to public.
 Select SSH under the setup options, and copy the SSH URL provided on the "…or push an existing repository from the command line" section.
 
-2. Set Up the Local Repository
+### 2. Set Up the Local Repository
+
 Navigate to Documents: Change to the Documents directory:
 
-cd ~/Documents
+_**cd ~/Documents**_
 
 Create the Directory: Make a directory for your project:
 
-mkdir cloud-bootcamp
+_**mkdir cloud-bootcamp**_
 
 Move into the Directory:
 
-cd cloud-bootcamp
+_**cd cloud-bootcamp**_
 
 Verify Location (Optional): Check your current directory with:
 
-pwd
+_**pwd**_
 
 3. Configure Git Identity
 If you haven’t already, set your Git identity to match your GitHub account:
 
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+_**git config --global user.email "you@example.com"
+git config --global user.name "Your Name"**_
 
 This allows Git to associate your commits with your GitHub account.
 
 4. Create a Basic README File
-Use the echo command to create a simple README file:
+Use the echo command to create a README file:
 
-echo "# cloud-bootcamp" >> README.md
+_**echo "# cloud-bootcamp" >> README.md**_
 
 Verify the contents:
 
-cat README.md
+_**cat README.md**_
 
 5. Initialize Git and Stage Changes
 
 Initialize Git: Set up Git in this directory to enable version control.
 
-git init
+_**git init**_
 
 Stage Changes: Use git add to stage the README file:
 
-git add README.md
+_**git add README.md**_
 
 Commit Changes: Commit the staged changes with a message:
 
-git commit -m "Initial commit"
+_**git commit -m "Initial commit"**_
 
 6. Link to the GitHub Repository (Remote)
 Add the Remote Repository: Connect your local repository to the GitHub remote repository URL you copied:
 
-git remote add origin <GitHub_SSH_URL>
+_**git remote add origin <GitHub_SSH_URL>**_
 
 Replace <GitHub_SSH_URL> with the SSH URL of your GitHub repository.
 
 7. Push to GitHub
 Push your local commits to the remote repository:
 
-git push -u origin main
+_**git push -u origin main**_
 
 After running this command, you should see your files on the GitHub repository page.
 
 8. Update Files and Push Again
 Edit the README File: Open the README file for editing, e.g., with nano:
 
-nano README.md
+_**nano README.md**_
 
-Add a line such as "Updated file with additional info."
+Add a line in the file "Updated file with additional info." just so there is a change in the file. 
 
 Check the Git Status:
 
-git status
+_**git status**_
+
+*the text result should be 'red' indicating a change too the file is not commited. 
+
 Stage and Commit Changes:
 
-git add README.md
-git commit -m "Updated README with additional info"
+_**git add README.md
+git commit -m "Updated README with additional info"**_
 
 Push Changes to GitHub:
 
-git push
+_**git push**_
 
 Refresh your GitHub repository page to see the updated README.
 
-Benefits for Cloud Security Engineers
+## Benefits for Cloud Security Engineers
 
 Version Control: Git allows auditable and controlled management of infrastructure code and configuration files (e.g., Terraform, CloudFormation).
 Collaboration: GitHub supports collaboration across teams and locations, helping everyone work on the same configurations and codebase without conflicts.
