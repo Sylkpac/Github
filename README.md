@@ -1,11 +1,11 @@
 # Table of Content:
 
-1.  [Setting Up SSH Keys for GitHub Access](#security-research-projects)
+1.  [Setting Up SSH Keys for GitHub Access](#Setting-Up-SSH)
 2.  
 
 ------------------------------------------------------
 
-# Setting Up SSH Keys for GitHub Access<a name="security-research-projects"></a>  
+# Setting Up SSH Keys for GitHub Access<a name="Setting-Up-SSH"></a>  
 
 ### Objective:  
 In this lab, you'll learn how to generate and configure SSH keys to securely connect to GitHub. By the end, you'll be able to use SSH for authentication with GitHub, improving both security and convenience.  
