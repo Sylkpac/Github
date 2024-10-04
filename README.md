@@ -90,7 +90,7 @@ Finally, let’s test the connection between your machine and GitHub. Run the fo
 _**ssh -T git@github.com**_      
 
 If successful, you'll get a confirmation message like:    
-_Hi [your_username]! You've successfully authenticated, but GitHub does not provide shell access._    
+_"Hi [your_username]! You've successfully authenticated, but GitHub does not provide shell access."_    
 
 Bonus: Copying Public Key to Clipboard (Optional)    
 To make copying your public key easier, you can send it directly to the clipboard. First, ensure xsel is installed:     
