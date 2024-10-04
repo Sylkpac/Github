@@ -122,7 +122,7 @@ Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents fo
 ## Prerequisites   
 - A GitHub account
 - Basic familiarity with the command line
-- SSH keys set up with GitHub for secure access '[see the Setting Up SSH Keys for GitHub Access Lab]'(#setting-up-ssh)
+- SSH keys set up with GitHub for secure access [see the Setting Up SSH Keys for GitHub Access Lab](#setting-up-ssh)
 
 ## Tools
 Terminal or Command Prompt (e.g., WSL - Ubuntu)
