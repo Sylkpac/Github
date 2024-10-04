@@ -122,7 +122,7 @@ Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents fo
 ## Prerequisites   
 - A GitHub account
 - Basic familiarity with the command line
-- SSH keys set up with GitHub for secure access [see the Setting Up SSH Keys for GitHub Access Lab](#setting-up-ssh)
+- SSH keys set up with GitHub for secure access see the [Setting Up SSH Keys for GitHub Access Lab](#setting-up-ssh)
 
 ## Tools
 Terminal or Command Prompt (e.g., WSL - Ubuntu)
@@ -139,7 +139,7 @@ Navigate to Documents: Change to the Documents directory:
 
 _**cd ~/Documents**_
 
-Create the Directory: Make a directory for your project:
+Create the Directory:
 
 _**mkdir cloud-bootcamp**_
 
@@ -151,15 +151,15 @@ Verify Location (Optional): Check your current directory with:
 
 _**pwd**_
 
-3. Configure Git Identity
+### 3. Configure Git Identity     
 If you haven’t already, set your Git identity to match your GitHub account:
 
-_**git config --global user.email "you@example.com"
+_**git config --global user.email "you@example.com"     
 git config --global user.name "Your Name"**_
 
 This allows Git to associate your commits with your GitHub account.
 
-4. Create a Basic README File
+### 4. Create a Basic README File
 Use the echo command to create a README file:
 
 _**echo "# cloud-bootcamp" >> README.md**_
@@ -168,53 +168,53 @@ Verify the contents:
 
 _**cat README.md**_
 
-5. Initialize Git and Stage Changes
+### 5. Initialize Git and Stage Changes
 
-Initialize Git: Set up Git in this directory to enable version control.
+**Initialize Git:** Set up Git in this directory to enable version control.
 
 _**git init**_
 
-Stage Changes: Use git add to stage the README file:
+**Stage Changes:** Use git add to stage the README file:
 
 _**git add README.md**_
 
-Commit Changes: Commit the staged changes with a message:
+**Commit Changes:** Commit the staged changes with a message:
 
 _**git commit -m "Initial commit"**_
 
-6. Link to the GitHub Repository (Remote)
+### 6. Link to the GitHub Repository (Remote)
 Add the Remote Repository: Connect your local repository to the GitHub remote repository URL you copied:
 
 _**git remote add origin <GitHub_SSH_URL>**_
 
 Replace <GitHub_SSH_URL> with the SSH URL of your GitHub repository.
 
-7. Push to GitHub
+### 7. Push to GitHub
 Push your local commits to the remote repository:
 
 _**git push -u origin main**_
 
 After running this command, you should see your files on the GitHub repository page.
 
-8. Update Files and Push Again
+### 8. Update Files and Push Again
 Edit the README File: Open the README file for editing, e.g., with nano:
 
 _**nano README.md**_
 
 Add a line in the file "Updated file with additional info." just so there is a change in the file. 
 
-Check the Git Status:
+**Check the Git Status:**
 
 _**git status**_
 
-*the text result should be 'red' indicating a change too the file is not commited. 
+*the text result should be 'red' indicating a change to the file is _not_ commited. 
 
-Stage and Commit Changes:
+**Stage and Commit Changes:**
 
 _**git add README.md
 git commit -m "Updated README with additional info"**_
 
-Push Changes to GitHub:
+**Push Changes to GitHub:**
 
 _**git push**_
 
