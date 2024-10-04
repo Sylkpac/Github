@@ -20,8 +20,10 @@ Optional: tmux for multitasking
 
 ### Step-by-Step Procedure:  
 1. Generate SSH Keys  
-First, open your terminal and run the following command to generate an SSH key pair. Replace your_email@example.com with your actual email address you used to make a Github account:     
-_**ssh-keygen -t rsa -b 4096 -C "your_email@example.com"**_    
+First, open your terminal and run the following command to generate an SSH key pair. Replace your_email@example.com with your actual email address you used to make a Github account:  
+     
+_**ssh-keygen -t rsa -b 4096 -C "your_email@example.com"**_      
+
 Press _**Enter**_ 2 times
   
 *Resource: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
@@ -36,25 +38,35 @@ You'll be prompted to choose a file name to save the key (press Enter to accept 
 2. View the Public Key  
 Next, open the file that contains your public key:  
 
-Linux/macOS: _**~/.ssh/id_rsa.pub**_  
+Linux/macOS:
+  
+_**~/.ssh/id_rsa.pub**_   
+
 Copy the contents of this file — this is your public key, which will be added to GitHub.  
 
 3. Configure SSH (Optional)  
 If you don’t already have a configuration file, create one:
 
 _**touch ~/.ssh/config**_  
-Edit this file (_**nano ~/.ssh/config**_) and add the following lines to configure GitHub access:  
+
+Edit this file:   
+
+_**nano ~/.ssh/config**_  
+
+and add the following lines to configure GitHub access:  
 
 _**Host github.com-(your github name)    
 &nbsp; HostName github.com  
 &nbsp; User git  
 &nbsp; IdentityFile ~/.ssh/id_rsa**_      
     
-Make sure the file is saved with the correct idents/spacing.      
+*Make sure the file is saved with the correct idents/spacing.      
 
 5. Start the SSH Agent    
-The SSH agent is a background program that handles your SSH keys for automatic authentication. Start it with the following command:    
-_**eval "$(ssh-agent -s)"**_    
+The SSH agent is a background program that handles your SSH keys for automatic authentication. Start it with the following command:
+    
+_**eval "$(ssh-agent -s)"**_   
+
 You should see the agent process ID (PID), confirming it’s running.    
 
 5. Add Your Private Key to the SSH Agent    
