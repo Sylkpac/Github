@@ -117,11 +117,11 @@ Congratulations! You’ve successfully set up SSH keys for secure access to GitH
 - **Auditing & Accountability:** Git provides a history of changes, making it easy to review who made what changes for security and compliance.
 - **Backup & Recovery:** Storing code and configurations on GitHub safeguards against local data loss, ensuring you can always access your files.
 
-## Lab Objective     
-This lab will walk you through the process of creating a local Git repository for a directory on your computer, configuring it, and pushing it to GitHub for version control. For Cloud Security Engineers, managing code and configuration files securely with Git is essential, making this process foundational for any IaC (Infrastructure as Code) workflows.  
-
 ## What is Git?
 Git is a distributed version control system (DVCS) that tracks changes made to files over time. It's primarily used by software developers to manage source code, but it can be applied to any set of files.
+
+## Lab Objective     
+This lab will walk you through the process of creating a local Git repository for a directory on your computer, configuring it, and pushing it to GitHub for version control. For Cloud Security Engineers, managing code and configuration files securely with Git is essential, making this process foundational for any IaC (Infrastructure as Code) workflows.  
 
 ## Scenario
 Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents folder to store resources for a cloud security bootcamp. You want to version-control this directory using Git and push it to a GitHub repository for backup and collaboration.
