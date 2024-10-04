@@ -18,7 +18,7 @@ Basic familiarity with the command line
 Terminal or Command Prompt (This lab uses Ubuntu on WSL)    
 Optional: tmux for multitasking    
 
-### Step-by-Step Procedure:  
+### Step-by-Step Procedure:
 1. Generate SSH Keys  
 First, open your terminal and run the following command to generate an SSH key pair. Replace your_email@example.com with your actual email address you used to make a Github account:  
      
@@ -33,7 +33,7 @@ Press _**Enter**_ 2 times
 - **t rsa:** Specifies RSA as the key type (a commonly used secure algorithm).  
 - **b 4096:** Sets the key length to 4096 bits for stronger security.  
 - **C "your_email@example.com":** Adds your email as a comment for identification purposes.  
-You'll be prompted to choose a file name to save the key (press Enter to accept the default path). You can also set a passphrase to protect your private key, or press Enter to skip.  
+You'll be prompted to choose a file name to save the key (press Enter to accept the default path). You can also set a passphrase to protect your private key, or press Enter to skip.
 
 2. View the Public Key  
 Next, open the file that contains your public key:  
