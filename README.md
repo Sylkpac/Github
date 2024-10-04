@@ -1,7 +1,7 @@
 # Table of Content:
 
 1.  [Setting Up SSH Keys for GitHub Access](#setting-up-ssh)
-2.  
+2.  [Version Controlling using Git](#version-controlling)
 
 ------------------------------------------------------
 
@@ -108,7 +108,7 @@ Congratulations! You’ve successfully set up SSH keys for secure access to GitH
 
 ------------------------------------------------------
 
-# GitHub Lab: Version Controlling a Local Directory on GitHub
+# Version Controlling using Git<a name="version-controlling"></a> 
 
 ## Objective     
 This lab will walk you through the process of creating a local Git repository for a directory on your computer, configuring it, and pushing it to GitHub for version control. For Cloud Security Engineers, managing code and configuration files securely with Git is essential, making this process foundational for any IaC (Infrastructure as Code) workflows.  
@@ -122,7 +122,7 @@ Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents fo
 ## Prerequisites   
 - A GitHub account
 - Basic familiarity with the command line
-- SSH keys set up with GitHub for secure access (see the Setting Up SSH Keys for GitHub Access Lab)
+- SSH keys set up with GitHub for secure access (see the Setting Up SSH Keys for GitHub Access Lab(#setting-up-ssh))
 
 ## Tools
 Terminal or Command Prompt (e.g., WSL - Ubuntu)
