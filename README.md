@@ -134,6 +134,7 @@ Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents fo
 
 ## Tools
 Terminal or Command Prompt (e.g., WSL - Ubuntu)
+Follow along [video](https://www.youtube.com/watch?v=PWqS4NBhEY8)
 
 ## Steps
 
