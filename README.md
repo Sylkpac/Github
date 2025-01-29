@@ -3,6 +3,7 @@
 1.  [Setting Up SSH Keys for GitHub Access](#setting-up-ssh)
 2.  [Version Controlling using Git](#version-controlling)
 3.  [Collaborating with Git – Using Branches and Pull Requests](#collaborating)
+4.  [AWS EC2 Linux Instance Creation](#ec2linuxcreation)
 
 ------------------------------------------------------
 
@@ -364,3 +365,78 @@ Verify the Changes Locally:
 _**nano README.md**_     
 
 Confirm that the latest updates from feature/git-tutorial are now in your local main branch.
+
+------------------------------------
+
+# AWS EC2 Linux Instance Creation<a name="ec2linuxcreation"></a>  
+
+## Objective
+As a Cloud Security Engineer, I want to make setting up an EC2 Linux instance in AWS as straightforward as possible while keeping security in mind. These notes are all about breaking things down and focusing on the essentials.
+
+## Step-by-Step Procedure
+1. Log in to Your AWS Account Console
+
+Always log in as an IAM user, not the root account, for security purposes.
+
+2. Select Your Region
+
+On the AWS Management Console, choose the region closest to you from the dropdown menu in the top-right corner. 
+
+1. Bookmark Commonly Used Services
+
+For future convenience, search for these common services in the search bar and click the star icon on the right to add them to your toolbar:
+
+IAM
+
+VPC
+
+EC2
+
+Lambda
+
+S3
+
+RDS
+
+4. Navigate to EC2
+
+Search for EC2 in the search bar or select it from your bookmarks.
+
+5. Launch an EC2 Instance
+
+Click on Launch Instance.
+
+Name your instance something simple, such as linux_ec2, to keep it organized.
+
+Select Amazon Linux as your Amazon Machine Image (AMI).
+
+Choose t2.micro (free tier eligible) as the instance type.
+
+Under the Key pair (login) section, select Proceed without a key pair for now.  
+(Note: In production, always configure a key pair for secure access.)
+
+6. Launch the Instance
+
+Click on Launch Instance.
+
+Navigate to the Instances section in the left-hand menu to monitor your instance’s status.
+
+7. Review the Instance State
+
+**Pending:** The instance is being created and provisioned.   
+**Running:** The instance is active and ready to use.
+
+8. Shutting down EC2
+
+Go back to the AWS online instance dashboard
+
+Select the instance > instance state > terminate instance 
+
+This will completely stop and delete the instance. This will help prevent getting charged. 
+
+## Conclusion
+Security should always be top of mind when working with AWS EC2 instances. While this guide covers the basics, here are a few things to keep in mind:
+Avoid using root accounts for day-to-day tasks.
+Use key pairs for SSH access, especially in production environments.
+Regularly review and follow AWS security best practices.
+
