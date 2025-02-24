@@ -4,6 +4,8 @@
 2.  [Version Controlling using Git](#version-controlling)
 3.  [Collaborating with Git – Using Branches and Pull Requests](#collaborating)
 4.  [AWS EC2 Linux Instance Creation](#ec2linuxcreation)
+5.  [Creating a No-Cost VPC (Basics)](#createvpc)
+6.  
 
 ------------------------------------------------------
 
@@ -366,7 +368,7 @@ _**nano README.md**_
 
 Confirm that the latest updates from feature/git-tutorial are now in your local main branch.
 
-------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # AWS EC2 Linux Instance Creation<a name="ec2linuxcreation"></a>  
 
@@ -440,3 +442,64 @@ Avoid using root accounts for day-to-day tasks.
 Use key pairs for SSH access, especially in production environments.
 Regularly review and follow AWS security best practices.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Creating a No-Cost VPC (Basics)<a name="createvpc"></a>  
+
+## Objective
+This guide walks you through creating a basic VPC at no cost, helping you understand AWS networking fundamentals using the AWS Management Console.
+
+## Prerequisites
+- An AWS account
+- Basic knowledge of VPC concepts (CIDR blocks, subnets, availability zones)
+
+## Tools Required
+- AWS Online Console (No CLI or Terraform for this demo)
+
+## Step-by-Step Procedure
+
+### 1. Access the AWS Console & Navigate to VPC
+- Sign in to your AWS account.
+- Go to the VPC Service Console (Search for "VPC" in the AWS search bar).
+- If this is your first time, you will see a default VPC already created. Every AWS account comes with one by default.
+- Review the VPC dashboard (left-hand panel) to get an overview of the VPC-related resources in your selected AWS region.
+- Click “Create VPC” to start building a new one based on our "[Building a Secure and Scalable AWS VPC: A Thought Process Guide](https://github.com/Sylkpac/Security/blob/main/README.md#buildingvpc)" project.
+
+### 2. Configure the VPC Settings
+- Select "VPC and More" – this option lets AWS handle much of the configuration for you.
+- **CIDR Block:** Leave as 10.0.0.0/16 (AWS defaults to this range, which provides 65,536 IP addresses).
+  - **Why?** This range is large enough for a variety of networking setups while maintaining flexibility for subnetting.
+- **Availability Zones:** Leave at 2 (this ensures redundancy).
+  - **Why?** Using multiple Availability Zones (AZs) protects against failures in a single data center.
+- **Subnets:**
+  - **Public Subnets:** Keep at 2 (one in each AZ).
+  - **Private Subnets:** Increase to 4 (two per AZ).
+    - **Why?** Public subnets host resources needing internet access, while private subnets keep critical services isolated.
+- **NAT Gateway:** You will see a dollar symbol next to this option. NAT Gateways incur charges, so select "None" at this time to avoid costs.
+- **Other Settings:** Leave them as default.
+- Click "Create VPC."
+
+### 3. Verify Your VPC
+- Once created, click "View VPC" to see your newly created VPC.
+- On the left-hand panel, select “Your VPCs.”
+- You should now see two VPCs:
+  - The default VPC (pre-created by AWS).
+  - The one you just created.
+
+### 4. Inspect Your Subnets
+- On the left-hand panel, click "Subnets."
+- Click the refresh button (top right, next to “Actions”) to update the list.
+- You should now see a mix of:
+  - Subnets from the default AWS VPC
+  - Subnets from the VPC you created
+- **Filter by your VPC:**
+  - On the left panel, select "Filter by VPC."
+  - Choose your newly created VPC to see only its subnets.
+
+### Key Takeaways
+- This hands-on exercise is a visual guide to understanding VPC creation in the AWS Console.
+- In the real world, VPCs should not be provisioned manually via the AWS Console.
+- Infrastructure as Code (IaC) tools like Terraform or AWS CloudFormation should be used for scalability and automation.
+- **Why did we create this manually then?**
+  - To get a visual understanding of AWS networking components.
+  - To see how subnets and routing are structured before moving to automation tools.
