@@ -109,7 +109,7 @@ Then, copy the public key with:
 **Conclusion:**    
 Congratulations! You’ve successfully set up SSH keys for secure access to GitHub. Make sure to document your process in your GitHub repository, and feel free to experiment with other configurations and multiple SSH keys for different projects.  
 
-------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 # Version Controlling using Git<a name="version-controlling"></a> 
 
@@ -142,32 +142,32 @@ Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents fo
 
 ### 1. Create a Repository on GitHub
 Go to GitHub and create a new repository named 'cloud-bootcamp'. Set it to public.
-Select SSH under the setup options, and copy the SSH URL provided on the "…or push an existing repository from the command line" section.
+Select and copy SSH URL under the "<>Code>" "…or push an existing repository from the command line" section.
 
 ### 2. Set Up the Local Repository
 
 Navigate to Documents:
 
-_**cd ~/Documents**_
+`cd ~/Documents`
 
 Create the Directory:
 
-_**mkdir cloud-bootcamp**_
+`mkdir cloud-bootcamp`
 
 Move into the Directory:
 
-_**cd cloud-bootcamp**_
+`cd cloud-bootcamp`
 
 Verify Location:
 
-_**pwd**_
+`pwd`
 
 ### 3. Configure Git Identity     
 If you haven’t already, set your Git identity to match your GitHub account:
 
-_**git config --global user.email "you@example.com"**_      
+`git config --global user.email <you@example.com>`      
 
-_**git config --global user.name "Your Name"**_
+`git config --global user.name "Your Name"`
 
 This allows Git to associate your commits with your GitHub account.
 
