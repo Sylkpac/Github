@@ -135,8 +135,9 @@ Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents fo
 - SSH keys set up with GitHub for secure access see the [Setting Up SSH Keys for GitHub Access Lab](#setting-up-ssh)
 
 ## Tools
-- Terminal or Command Prompt (e.g., WSL - Ubuntu)     
-- Follow along [video](https://www.youtube.com/watch?v=PWqS4NBhEY8)
+- Terminal or Command Prompt (e.g., WSL - Ubuntu)   
+- Cloning Repositories Follow along [video](https://www.youtube.com/watch?v=PWqS4NBhEY8)  
+- Version Contol Follow along [video](https://www.youtube.com/watch?v=PWqS4NBhEY8)
 
 ## Steps
 
