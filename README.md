@@ -111,7 +111,7 @@ Congratulations! You’ve successfully set up SSH keys for secure access to GitH
 
 --------------------------------------------------------------------------------------------------------------------------
 
-# Version Controlling using Git<a name="version-controlling"></a> 
+# Version Controlling using Git/ Cloning Repositories<a name="version-controlling"></a> 
 
 ## Benefits for Cloud Security Engineers
 
