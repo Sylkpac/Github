@@ -1,7 +1,7 @@
 # Table of Content:
 
 1.  [Setting Up SSH Keys for GitHub Access](#setting-up-ssh)
-2.  [Version Controlling using Git](#version-controlling)
+2.  [Version Controlling using Git/Cloning Repositories](#version-controlling)
 3.  [Collaborating with Git – Using Branches and Pull Requests](#collaborating)
 4.  [AWS EC2 Linux Instance Creation](#ec2linuxcreation)
 5.  [Creating a No-Cost VPC (Basics)](#createvpc)
@@ -111,7 +111,7 @@ Congratulations! You’ve successfully set up SSH keys for secure access to GitH
 
 --------------------------------------------------------------------------------------------------------------------------
 
-# Version Controlling using Git/ Cloning Repositories<a name="version-controlling"></a> 
+# Version Controlling using Git/Cloning Repositories<a name="version-controlling"></a> 
 
 ## Benefits for Cloud Security Engineers
 
