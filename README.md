@@ -136,7 +136,7 @@ Imagine you’ve set up a directory called 'cloud-bootcamp' in your Documents fo
 
 ## Tools
 - Terminal or Command Prompt (e.g., WSL - Ubuntu)   
-- Cloning Repositories Follow along [video](https://www.youtube.com/watch?v=PWqS4NBhEY8)  
+- Cloning Repositories Follow along [video](https://youtu.be/q9wc7hUrW8U?si=S4yf3-IRB1sFcXH0)  
 - Version Contol Follow along [video](https://www.youtube.com/watch?v=PWqS4NBhEY8)
 
 ## Steps
