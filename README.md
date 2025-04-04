@@ -109,7 +109,7 @@ Then, copy the public key with:
 **Conclusion:**    
 Congratulations! You’ve successfully set up SSH keys for secure access to GitHub. Make sure to document your process in your GitHub repository, and feel free to experiment with other configurations and multiple SSH keys for different projects.  
 
---------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Cloning Repositories/Version Controlling using Git<a name="version-controlling"></a> 
 
@@ -159,7 +159,7 @@ Move into the Directory:
 
 `cd cloud-bootcamp`
 
-Verify Location:
+Verify and stay in the `cloud-bootcamp` dirctory:
 
 `pwd`
 
@@ -175,39 +175,39 @@ This allows Git to associate your commits with your GitHub account.
 ### 4. Create a Basic README File
 Use the echo command to create a README file:
 
-_**echo "# cloud-bootcamp" >> README.md**_
+`*echo "# cloud-bootcamp" >> README.md`
 
 Verify the contents:
 
-_**cat README.md**_
+`cat README.md`
 
 ### 5. Initialize Git and Stage Changes
 
 Initialize Git: Set up Git in this directory to enable version control.
 
-_**git init**_
+`git init`
 
 Stage Changes: Use git add to stage the README file:
 
-_**git add README.md**_
+`git add README.md`
 
 Commit Changes: Commit the staged changes with a message:
 
-_**git commit -m "Initial commit"**_
+`git commit -m "Initial commit"`
 
 *The -m switch is for message 
 
 ### 6. Link to the GitHub Repository (Remote)
 Add the Remote Repository: Connect your local repository to the GitHub remote repository URL you copied:
 
-_**git remote add origin <GitHub_SSH_URL>**_
+`git remote add origin <HTTPS_URL>`
 
-Replace <GitHub_SSH_URL> with the SSH URL of your GitHub repository.
+Insert <HTTPS_URL> of your GitHub repository.
 
 ### 7. Push to GitHub
 Push your local commits to the remote repository:
 
-_**git push -u origin main**_
+`git push -u origin main`
 
 *the -u switch is to set the upstream branch. The upstream branch is a remote branch that your local branch is tracking.
 
@@ -216,30 +216,30 @@ After running this command, you should see your files on the GitHub repository p
 ### 8. Update Files and Push Again
 Edit the README File: Open the README file for editing, e.g., with nano:
 
-_**nano README.md**_
+`nano README.md`
 
 Add a line in the file "Updated file with additional info." just so there is a change in the file. 
 
 Check the Git Status:
 
-_**git status**_
+`git status`
 
 *_Red:_ A file listed in red indicates that it is untracked. This means the file is new and hasn't been added to the Git repository yet.     
 _Green:_ A file listed in green indicates that it is staged. This means the file is ready to be committed to the repository.
 
 Stage and Commit Changes:
 
-_**git add README.md**_          
+`git add README.md`          
 
-_**git commit -m "Updated README with additional info"**_
+`git commit -m "Updated README with additional info"`
 
 Push Changes to GitHub:
 
-_**git push**_
+`git push`
 
 Refresh your GitHub repository page to see the updated README.
 
-------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Collaborating with Git – Using Branches and Pull Requests<a name="collaborating"></a> 
 
