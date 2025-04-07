@@ -178,7 +178,7 @@ This allows Git to associate your commits with your GitHub account.
 ### 4. Create a Basic README File
 Use the echo command to create a README file:
 
-`*echo "# cloud-bootcamp" >> README.md`
+`echo "# cloud-bootcamp" >> README.md`
 
 Verify the contents:
 
@@ -206,6 +206,8 @@ Add the Remote Repository: Connect your local repository to the GitHub remote re
 `git remote add origin <HTTPS_URL>`
 
 Insert <HTTPS_URL> of your GitHub repository.
+
+*Note: if you see "error: remote <name> already exists."; review this [page](https://www.cloudbees.com/blog/remote-origin-already-exists-error)
 
 ### 7. Push to GitHub
 Push your local commits to the remote repository:
