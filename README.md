@@ -24,6 +24,8 @@ In this lab, you'll learn how to generate and configure SSH keys to securely con
 ## Step-by-Step Procedure:
 ### 1. Generate SSH Keys  
 First, open your terminal and run the following command to generate an SSH key pair. Replace your_email@example.com with your actual email address you used to make a Github account:  
+
+`cd ~/.ssh/`
      
 `ssh-keygen -t rsa -b 4096 -C <your_email@example.com>`
 
@@ -109,8 +111,7 @@ Then, copy the public key with:
 **Conclusion:**    
 Congratulations! You’ve successfully set up SSH keys for secure access to GitHub. Make sure to document your process in your GitHub repository, and feel free to experiment with other configurations and multiple SSH keys for different projects.  
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Cloning Repositories/Version Controlling using Git<a name="version-controlling"></a> 
 
 ## Benefits for Cloud Security Engineers
@@ -150,6 +151,8 @@ Select and copy SSH URL under the "<>Code>" "…or push an existing repository f
 Navigate to Documents:
 
 `cd ~/Documents`
+
+*Note: You might need to make a "Documents" repository if you have not done so already
 
 Create the Directory:
 
